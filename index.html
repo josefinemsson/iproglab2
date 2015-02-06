@@ -11,19 +11,57 @@
 
   </head>
   <body>
-	<div class="container">
-		<h1>Dinner planner</h1>
-		<div id="exampleView">
-			<div>
-				Number of guests: <span id="numberOfGuests"></span>
+
+	<div class="container-fluid">
+		<div class="row">
+  			<div class="col-md-12" style="background-color:#d3d3d3;">
+				<h1>Homelette <small>From the best chefs in the world directly into your kitchen NOT</small></h1>
+			</div> 
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<div id="exampleView">
+					<h4>My Dinner</h4>
+					People
+					 <button type="button" class="btn btn-default btn-xlg" disabled="disabled"><span id="numberOfGuests"></span></button>
+					 <div class="btn-group-vertical" role="group" aria-label="...">
+	         			<button id="minusGuest" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up"></span></button>
+						<button id="plusGuest" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-down"></span></button>
+					</div><br /><br />
+
+						<div style="width:100%;padding:5% 0 5% 0;">
+							<div style="width:80%;float:left;background-color:#d3d3d3;">Dish Name</div>
+							<div style="width:20%;float:right;background-color:#d3d3d3;">Cost</div>
+						</div>
+
+						<div style="width:100%;">
+						<div style="width:80%;float:left;"><span id="dishName"></span></div>
+						<div style="width:20%;float:right;"><span id="dishPrice"></span></div>
+						</div>
+
+					<br />
+					<br />
+					<div style="padding:5% 0 0 0; border-top:5px solid #d3d3d3;">
+					
+							<p align="right">SEK <span id="totalCost"></span></p>
+
+						
+					</div>
+
+					<center><input class="btn btn-default" type="submit" value="Comfirm Dinner"><center>
+				</div>
 			</div>
-			<div>
-          <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-			</div>
+			<div class="col-md-9" style="background-color:green;">
+				<div style="background-color:black;">
+					hehe<br>hehe<br>hehehf<br>
+					
+				</div>
+				<div style="background-color:pink;">
+					hehe<br>hehe<br>hehehf<br>
+					
+				</div>
 		</div>
 	</div>
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
