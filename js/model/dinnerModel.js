@@ -341,5 +341,3 @@ var DinnerModel = function() {
 			}]
 		}
 	];
-
-}

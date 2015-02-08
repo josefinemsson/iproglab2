@@ -8,58 +8,78 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
   <body>
 
 	<div class="container-fluid">
-		<div class="row">
-  			<div class="col-md-12" style="background-color:#d3d3d3;">
-				<h1>Homelette <small>From the best chefs in the world directly into your kitchen NOT</small></h1>
-			</div> 
-		</div>
-		<div class="row">
-			<div class="col-md-2">
-				<div id="exampleView">
+		<div id="exampleView">
+			<div class="row">
+  				<div class="col-md-12" style="background-color:#d3d3d3;">
+					<h1>Homelette <small>From the best chefs in the world directly into your kitchen NOT</small></h1>
+				</div> 
+			</div>
+			<div class="row">
+				<div class="col-md-2">
 					<h4>My Dinner</h4>
 					People
 					 <button type="button" class="btn btn-default btn-xlg" disabled="disabled"><span id="numberOfGuests"></span></button>
 					 <div class="btn-group-vertical" role="group" aria-label="...">
 	         			<button id="minusGuest" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up"></span></button>
 						<button id="plusGuest" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-down"></span></button>
-					</div><br /><br />
+					</div>
+					<br />
+					<br />
 
-						<div style="width:100%;padding:5% 0 5% 0;">
-							<div style="width:80%;float:left;background-color:#d3d3d3;">Dish Name</div>
-							<div style="width:20%;float:right;background-color:#d3d3d3;">Cost</div>
-						</div>
+					<div style="width:100%;padding:5% 0 5% 0;">
+						<div style="width:80%;float:left;background-color:#d3d3d3;">Dish Name</div>
+						<div style="width:20%;float:right;background-color:#d3d3d3;">Cost</div>
+					</div>
 
-						<div style="width:100%;">
+					<div style="width:100%;">
 						<div style="width:80%;float:left;"><span id="dishName"></span></div>
 						<div style="width:20%;float:right;"><span id="dishPrice"></span></div>
-						</div>
+					</div>
 
 					<br />
 					<br />
 					<div style="padding:5% 0 0 0; border-top:5px solid #d3d3d3;">
-					
-							<p align="right">SEK <span id="totalCost"></span></p>
-
-						
+						<p align="right">SEK <span id="totalCost"></span></p>
 					</div>
 
-					<center><input class="btn btn-default" type="submit" value="Comfirm Dinner"><center>
+					<center><input class="btn btn-default" type="submit" value="Comfirm Dinner"></center>
+				</div>
+				<div class="col-md-10">
+					<div class="dishhead" style="background-color:#3d5c00;">
+						<h4>Select Dish</h4>
+						<div class="row">
+							<div class="col-md-4">
+	    						<div class="input-group">
+	      							<input type="text" class="form-control" placeholder="Search for...">
+	      							<span class="input-group-btn">
+	        							<button class="btn btn-default" type="button">Go!</button>
+	      							</span>
+	   		 					</div>
+							</div>
+							<div class="col-md-4">
+								<div class="dropdown">
+	  								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Choose course<span class="caret"></span>
+	  								</button>
+	  								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+	    								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Main</a></li>
+	    								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Starter</a></li>
+	    								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dessert</a></li>
+	    					 		</ul>
+	    						</div>
+							</div>
+						</div>
+					</div>
+					<div id="Dishes">
+						<span id="allDishes"></span>
+					</div>	
 				</div>
 			</div>
-			<div class="col-md-9" style="background-color:green;">
-				<div style="background-color:black;">
-					hehe<br>hehe<br>hehehf<br>
-					
-				</div>
-				<div style="background-color:pink;">
-					hehe<br>hehe<br>hehehf<br>
-					
-				</div>
 		</div>
 	</div>
     <!-- jQuery -->
