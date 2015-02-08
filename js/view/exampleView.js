@@ -17,8 +17,15 @@ var ExampleView = function (container,model) {
 	this.dishPrice.html(model.getDishPrice);
 
 
-	var nameDish= model.getAllDishes('main dish').name//Den här måste skrivas som en for-loop då det kommer plockas ut många namn
+	var nameDish="";
+	for(i=0;i<=dishes.length-1;i++)
+	{
+		nameDish=dishes[i].name;
+		return nameDish
+	}
+
+
+	this.allDishes.html(nameDish);//Den här måste skrivas som en for-loop då det kommer plockas ut många namn
 //Vi måste sedan göra detsamam för image samt för beskrivning av maträtten
-	this.allDishes.html(nameDish);
 }
  
